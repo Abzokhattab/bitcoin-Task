@@ -14,16 +14,14 @@ import {bus}from '@/main.js';
     }, 
     methods:{
        sendFile(){
-        // console.log('312312');\
-        const date = new Date();
-
-        if( Date.parse (this.time2)<= date && Date.parse(this.time1)<=date && Date.parse(this.time1)<=this.time2){
+        const date = Date.parse(new Date().toISOString().slice(0,10));
+        if( Date.parse (this.time2)<= date && Date.parse(this.time1)<=date && Date.parse(this.time1)<=Date.parse(this.time2)){
           this.unvaild=''
          bus.$emit('send',{time1:this.time1,time2:this.time2})  
         }else if ( Date.parse(this.time1 )> date )
-            this.unvaild='Invaild input'+this.time1;
+            this.unvaild='Invaild input : '+this.time1;
         else if ( Date.parse(this.time2) > date )
-        this.unvaild='Invaild input'+this.time2;
+        this.unvaild='Invaild input : '+this.time2;
         else this.unvaild='Error: Time1 is greater than Time2'
       }
     }, mounted(){
@@ -39,7 +37,7 @@ import {bus}from '@/main.js';
     <date-picker  v-model="time2"   valueType="format"  ></date-picker>
       </div>
       <div>
-    <button v-on:click="sendFile">Click</button>
+    <button v-on:click="sendFile">Render</button>
 </div>
 <div>
   <p>{{ unvaild }}</p>

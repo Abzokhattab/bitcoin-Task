@@ -25,19 +25,17 @@ export default {
   extends: Bar,
   created(){
     bus.$on('send',(data)=>{
-      console.log(data)
       const url = 'https://api.coindesk.com/v1/bpi/historical/close.json?start='+data.time1+'&end='+data.time2
       fetch(url).then((response)=>{
         response.json().then((data)=>{
           this.data=Object.values(data.bpi)
-          console.log(this.data)
 
 
           this.renderChart({
             labels: Object.keys(data.bpi) ,
             datasets: [
               {
-                label: 'GitHub Commits',
+                label: 'BitCoin',
                 backgroundColor: '#f87979',
                 data: this.data
               }

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h3>Favoeoreore
+    
+    <h3>BitCoin Chart
       </h3>
 
     <FavChart/>
