@@ -2,9 +2,7 @@
   <div id="app">
     <h3>Favoeoreore
       </h3>
-    <button>
-    Hollo
-    </button>
+
     <FavChart/>
     <date/>
   </div>
