@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>Favoeoreore
+      </h3>
+    <button>
+    Hollo
+    </button>
+    <FavChart/>
+    <date/>
   </div>
-</template>
+</template>   
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import FavChart from './components/FavChart'
+import date from './components/date'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FavChart,date
+    
   }
 }
 </script>
@@ -19,10 +25,8 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "request": "^2.88.2",
+    "vue": "^2.6.11",
+    "vue-chartjs": "^3.5.0",
+    "vue2-datepicker": "^3.3.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
