@@ -7,7 +7,6 @@ const url='https://api.coindesk.com/v1/bpi/historical/close.json?start'+from+'&e
 request({url:url,json:true},(error,response)=>{
   console.log(response.body)
 })
-
 fetch(url).then((response)=>{
   response.json().then((data)=>{
       console.log(data.bpi)
@@ -18,8 +17,6 @@ fetch(url).then((response)=>{
     console.log(Da)
   })
 })
-
-
 */
 export default {
   extends: Bar,

@@ -4,10 +4,6 @@ import App from './App.vue'
 
 export const bus = new Vue();
 
-new Vue({
- el: '#app',
- render: h => h(App)
-})
 
 import { Line, mixins } from 'vue-chartjs'
 const { reactiveProp } = mixins
