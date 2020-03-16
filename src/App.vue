@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    
-    <h3>BitCoin Chart
-      </h3>
-
-    <FavChart/>
-    <date/>
+    <h3>BitCoin Chart</h3>
+    <FavChart />
+    <date />
   </div>
-</template>   
+</template>
 
 <script>
-import FavChart from './components/FavChart'
-import date from './components/date'
+import FavChart from "./components/FavChart";
+import date from "./components/date";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    FavChart,date
-    
+    FavChart,
+    date
   }
-}
+};
 </script>
 
 <style>
